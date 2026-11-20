@@ -1,0 +1,253 @@
+{
+  "currency": "UGX",
+  "vendors": [
+    {
+      "id": "hayat",
+      "name": "Hayat Drops",
+      "emoji": "🍹",
+      "tagline": "It's life added to the glass",
+      "accent": "#1B7F3B",
+      "whatsapp": "256700962284",
+      "phones": [
+        "0700 962 284",
+        "0762 249 091"
+      ],
+      "location": "Ishaka (mobile — we deliver door to door)",
+      "hours": null,
+      "hours_label": "Operating every day",
+      "serves": [
+        "Introduction ceremonies",
+        "Eid celebrations",
+        "Nikkah",
+        "Weddings",
+        "Corporate events",
+        "Private parties & celebrations",
+        "Door-to-door deliveries",
+        "Juice-making training"
+      ],
+      "note": "Craving something beyond the menu? Name any fruit — we blend it and deliver it. 2L, 3L and other quantities are available on request.",
+      "weekly_specials": {
+        "monday": "Tropical Temptation",
+        "tuesday": "Paradise Punch",
+        "wednesday": "Golden Elixir",
+        "thursday": "Velvet Sunrise",
+        "friday": "Nature's Sunrise",
+        "saturday": "Mango Tango",
+        "sunday": "Pineapple Paradise"
+      },
+      "delivery_zones": [
+        {
+          "id": "town",
+          "label": "Deliver to me",
+          "fee": null
+        },
+        {
+          "id": "pickup",
+          "label": "I will pick up",
+          "fee": 0
+        }
+      ],
+      "delivery_note": "Delivery fee is agreed on WhatsApp.",
+      "categories": [
+        {
+          "id": "juices",
+          "name": "Fresh juices",
+          "items": [
+            {
+              "id": "daily",
+              "name": "Today's special",
+              "description": "{special}",
+              "dynamic": "daily_special",
+              "options": [
+                {
+                  "id": "300ml",
+                  "label": "300 ml glass",
+                  "price": 1000
+                },
+                {
+                  "id": "1l",
+                  "label": "1 litre",
+                  "price": 3500
+                },
+                {
+                  "id": "5l",
+                  "label": "5 litres",
+                  "price": 18000
+                },
+                {
+                  "id": "10l",
+                  "label": "10 litres",
+                  "price": 35000
+                },
+                {
+                  "id": "20l",
+                  "label": "20 litres",
+                  "price": 65000
+                }
+              ]
+            },
+            {
+              "id": "custom",
+              "name": "Any fruit you name",
+              "description": "Tell us the fruit (or mix) — we blend it and deliver it.",
+              "requires_note": true,
+              "note_label": "Which fruit(s)?",
+              "options": [
+                {
+                  "id": "300ml",
+                  "label": "300 ml glass",
+                  "price": 1000
+                },
+                {
+                  "id": "1l",
+                  "label": "1 litre",
+                  "price": 3500
+                },
+                {
+                  "id": "5l",
+                  "label": "5 litres",
+                  "price": 18000
+                },
+                {
+                  "id": "10l",
+                  "label": "10 litres",
+                  "price": 35000
+                },
+                {
+                  "id": "20l",
+                  "label": "20 litres",
+                  "price": 65000
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "default_zone": "town"
+    },
+    {
+      "id": "ji",
+      "name": "JI Foods",
+      "emoji": "🍟",
+      "tagline": "Good food, great moments",
+      "accent": "#8B1A1A",
+      "whatsapp": "256704747008",
+      "phones": [
+        "0704 747 008"
+      ],
+      "location": "Abuja stage, Ishaka",
+      "hours": {
+        "open": "18:30",
+        "close": "23:00"
+      },
+      "hours_label": "Open daily from 6:30 pm (Mon–Sun)",
+      "serves": [],
+      "note": "Delicious. Affordable. Always a good choice! Prices marked 'from' start at that amount — final price depends on portion.",
+      "weekly_specials": {},
+      "delivery_zones": [
+        {
+          "id": "near",
+          "label": "Evening-safe, walkable distance (free)",
+          "fee": 0
+        },
+        {
+          "id": "rest",
+          "label": "Rest of Ishaka",
+          "fee": 1000
+        },
+        {
+          "id": "pickup",
+          "label": "I will pick up at Abuja stage",
+          "fee": 0
+        }
+      ],
+      "delivery_note": "Free delivery in evening-safe and walkable distances; UGX 1,000 for the rest of Ishaka.",
+      "categories": [
+        {
+          "id": "chips",
+          "name": "Chips",
+          "items": [
+            {
+              "id": "chips_plain",
+              "name": "Chips plain",
+              "description": "Golden fries.",
+              "options": [
+                {
+                  "id": "std",
+                  "label": "Plain",
+                  "price": 3000,
+                  "from": true
+                }
+              ]
+            },
+            {
+              "id": "chips_meat",
+              "name": "Chips with liver or beef",
+              "description": "Chips topped with sautéed liver or beef.",
+              "requires_choice": [
+                "Liver",
+                "Beef"
+              ],
+              "options": [
+                {
+                  "id": "std",
+                  "label": "Portion",
+                  "price": 6000
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pilau",
+          "name": "Pilau",
+          "items": [
+            {
+              "id": "pilau_plain",
+              "name": "Pilau plain",
+              "description": "Spiced pilau rice.",
+              "options": [
+                {
+                  "id": "std",
+                  "label": "Plain",
+                  "price": 2000,
+                  "from": true
+                }
+              ]
+            },
+            {
+              "id": "pilau_meat",
+              "name": "Pilau with liver or beef",
+              "description": "Pilau served with liver or beef.",
+              "requires_choice": [
+                "Liver",
+                "Beef"
+              ],
+              "options": [
+                {
+                  "id": "std",
+                  "label": "Portion",
+                  "price": 5000
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "default_zone": "rest",
+      "walkable_zone": "near",
+      "walkable_areas": [
+        "Abuja stage"
+      ]
+    }
+  ],
+  "areas": [
+    "Abuja stage",
+    "Ishaka town",
+    "KIU Western Campus area",
+    "Other (Ishaka)"
+  ],
+  "banners": [
+    "Free delivery from JI Foods within evening-safe walking distance. Cash on delivery on every order."
+  ]
+}
